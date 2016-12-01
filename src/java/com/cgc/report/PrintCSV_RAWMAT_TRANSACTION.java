@@ -80,7 +80,7 @@ public class PrintCSV_RAWMAT_TRANSACTION {
 
             rs = con.createStatement().executeQuery(SQL);
             try (PrintWriter pw = response.getWriter()) {
-                pw.println("กลุ่มสินค้า,รหัสสินค้า,รายละเอียดสินค้า,วันที่,ประเภทเอกสาร,น้ำหนัก,เดือน-ปี");
+                pw.println("กลุ่มสินค้า,รหัสสินค้า,รายละเอียดสินค้า,วันที่,ประเภทเอกสาร,น้ำหนัก,เดือน-ปี\n");
                 while (rs.next()) {
                     Str_Writer = objuti.NotNull(rs.getString("pgroup_name")) + ",";
                     Str_Writer += objuti.NotNull(rs.getString("product_id")) + ",";
@@ -89,10 +89,9 @@ public class PrintCSV_RAWMAT_TRANSACTION {
                     Str_Writer += objuti.NotNull(rs.getString("doc_type_desc")) + ",";
                     Str_Writer += objuti.NotNull(rs.getString("weight_total")) + ",";
                     Str_Writer += objuti.NotNull(rs.getString("month_year")) + ",";
-
+                    Str_Writer = "\n" ;
                     pw.println(Str_Writer);
                     System.out.println("Str_Writer = " + Str_Writer);
-                    Str_Writer = null;
                 }
             }
 

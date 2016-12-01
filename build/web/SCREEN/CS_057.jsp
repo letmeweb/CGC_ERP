@@ -285,16 +285,6 @@
                         <div class="panel-footer">   
 
                             <table  cellpadding="0" cellspacing="0" >
-                                <!--tr>
-                                    <td colspan="2" align="right"><strong>หมายเลขเอกสาร :<%=objs_p.getIso_no()%> </strong></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2" align="right"><strong>วันที่มีผลบังคับใช้ :<%=objs_p.getEffective_date()%></strong></td>
-                                </tr-->
-                                <!--tr>
-                                    <td class="columnlabel1"><b>เอกสารสมบูรณ์</b>&nbsp;</td>
-                                    <td class="columnobject"><input name="complete_flag" type="checkbox" id="complete_flag" value="N" onClick="Checkvalue(this.checked)"></td>
-                                </tr-->   
                                 <tr>
                                     <td class="columnlabel1">เอกสารที่ยังไม่อนุมัติ</td>
                                     <td class="columnobject">&nbsp;&nbsp;
